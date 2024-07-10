@@ -1,41 +1,46 @@
-# Project Title
+DegenToken
+Simple overview of use/purpose
+DegenToken is an ERC20-compliant token with additional functionalities for minting, burning, transferring, and redeeming items. It is designed to be used in a decentralized application where users can interact with the token and redeem it for NFTs.
 
-Simple overview of use/purpose.
+Description
+DegenToken is a smart contract implemented in Solidity that leverages the OpenZeppelin library for secure and modular development. The token supports standard ERC20 operations, along with custom features that allow users to mint, burn, transfer, and redeem tokens for items. This project includes deployment and configuration scripts using Hardhat, a development environment for Ethereum.
 
-## Description
+Getting Started
+Installing
+Clone the repository
+git clone <repository-url>
+cd <repository-folder>
+Install dependencies
 
-An in-depth paragraph about your project and overview of use.
+npm install
 
-## Getting Started
+Executing program
+Compile the contract
 
-### Installing
-
-* How/where to download your program
-* Any modifications needed to be made to files/folders
-
-### Executing program
-
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
-
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
-
-## Authors
-
-Contributors names and contact info
-
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+npx hardhat compile
+Deploy the contract
 
 
-## License
+npx hardhat run scripts/deploy.js --network volta
+Replace volta with localhost, fuji, or mainnet depending on your deployment target.
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+Interact with the contract
+
+Use Hardhat's console to interact with the deployed contract
+
+npx hardhat console --network volta
+Help
+For common issues, consider the following steps:
+
+Compilation errors: Ensure that all dependencies are installed and the Solidity version in your contract matches the version specified in hardhat.config.js.
+Deployment issues: Verify that your environment variables are correctly set and that you have sufficient funds for gas fees.
+Interaction problems: Check that the contract address is correctly specified and the network configurations are accurate.
+To get detailed help information, run:
+
+
+npx hardhat help
+Authors
+Annu
+Dominique Pizzie - @Annu1603
+License
+This project is licensed under the MIT License - see the LICENSE.md file for details.
