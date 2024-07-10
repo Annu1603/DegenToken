@@ -29,13 +29,13 @@ module.exports = {
       url: "https://api.avax-test.network/ext/bc/C/rpc",
       gasPrice: 225000000000,
       chainId: 43113,
-      accounts: [process.env.WALLET_PRIVATE_KEY], // we use a .env file to hide our wallets private key
+      accounts: ["5072e0cb477f1c05e86273968915204271209c9905cfb38a85ff957dd1ea2a4c"], // we use a .env file to hide our wallets private key
     },
     mainnet: {
       url: "https://api.avax.network/ext/bc/C/rpc",
       gasPrice: 225000000000,
       chainId: 43114,
-      accounts: [process.env.WALLET_PRIVATE_KEY],
+      accounts: ["5072e0cb477f1c05e86273968915204271209c9905cfb38a85ff957dd1ea2a4c"],
     },
   },
   etherscan: {
